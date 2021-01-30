@@ -1,0 +1,11 @@
+# docker-compose up -d
+# docker-compose stop
+# docker-compose rm -f
+
+version: '3.8'
+services:
+  api:
+    image: cesar/dockerapi
+    container_name: weather-api
+    ports:
+      - "8080:80"
